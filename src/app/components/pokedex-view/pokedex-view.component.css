@@ -167,8 +167,8 @@ position: relative;
 	margin: 3px auto;
 	width: 40px; 
 	display: flex; 
-	gap: 5px; /* Add spacing between buttons */
-	justify-content: space-between; /* Or space-around, or space-evenly */
+	gap: 5px;
+	justify-content: space-between; 
 	position: relative;
 	top: 10px; 
 }
@@ -198,15 +198,15 @@ position: relative;
 	position: absolute;
 	right: 213px;
 }
-#pokemonNumberInput::placeholder { /* style the placeholder */
+#pokemonNumberInput::placeholder {
 	
 	color: rgb(183, 182, 182);
 	text-align: center;
   }
 
   #pokemonNumberInput {
-	/* ... other styles ... */
-	width: 106px; /* Adjust the value as needed */
+	
+	width: 106px;
 	height: 30px;
 }
 button {

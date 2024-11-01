@@ -14,18 +14,18 @@ export class PokemonComponent {
     //onNextPokemon() {
       //this.clickPokemon.emit(); 
     //}
-    anteriorPokemon(){
+    anteriorPokemon(){//anterior pokemon con la cruz, izquierda
     this.clickPokemon.emit(-1);
     }
     
-    siguientePokemon(){
+    siguientePokemon(){//siguiente pokemon con la cruz, derecha
       this.clickPokemon.emit(1);
     }
-    funcionArriba() {
+    funcionArriba() {//siguiente pokemoncon la cruz, arriba
       this.clickPokemon.emit(1);
     }
     
-    funcionAbajo() {
+    funcionAbajo() {//anterior pokemon con la cruz, abajo
       this.clickPokemon.emit(-1);
     }
     @Output() resetBars = new EventEmitter<number>();
