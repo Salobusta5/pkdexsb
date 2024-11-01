@@ -1,0 +1,142 @@
+.imgcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+img{
+    width: 150px;
+    height: 150px;
+   right: 900px;
+}
+.control-cruz {
+    top: 60px;
+    left: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 20px auto;
+    position: relative; /* Necesario para posicionar los botones */
+  }
+  
+  .direccion {
+    width: 20px;
+    height: 20px;
+    background-color: #7e6870;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Para posicionar los botones */
+    
+}
+  
+  .arriba {
+    top: 0;
+   
+    left: 30px; /* Centra horizontalmente */
+    border-top-left-radius:6px ;
+    border-top-right-radius:6px ;
+    box-shadow: 2px 0 0 #732543; /* Adjust values as needed */
+
+  }
+
+  
+  
+  .abajo {
+    bottom: -60px;
+    left: 30px; /* Centra horizontalmente */
+    border-bottom-left-radius:6px ;
+    border-bottom-right-radius:6px ;
+    box-shadow: 2px 2px 0 #732543;  
+}
+  
+  .izquierda {
+    top: 20px; /* Centra verticalmente */
+    left: 10px;
+    border-bottom-left-radius:6px ;
+    border-top-left-radius:6px ;
+    box-shadow: -2px 2px 0 #732543
+  }
+ 
+  
+  .derecha {
+    top: 20px; /* Centra verticalmente */
+    left: 50px;
+    box-shadow: 2px 2px 0 #732543;
+   
+    border-bottom-right-radius:6px ;
+    border-top-right-radius:6px ; 
+  }
+
+  .ataque {
+    margin-top: 50px; 
+    margin-left: 30px;
+  }
+  .defensa {
+    margin-top: -53px;
+    margin-left: 120px;
+  }
+  .barraRoja{
+   
+ 
+   
+    height: 13px; /* Adjust height as needed */
+    width: 50px;
+ 
+    top: 405px;
+    left: 195px;
+  
+    border-radius: 100px;
+    
+    background: linear-gradient(to bottom, #fb6505, #bb0505); 
+    
+    
+    box-shadow: -1px 2px #7b0000;
+    transition: width 0.3s ease; /* Smooth width transition on changes */
+
+    }
+
+    .barraAzul{
+        
+        height: 13px; /* Adjust height as needed */
+    width: 80px;
+  
+    top: 405px;
+    left: 165px;
+    border-radius: 100px;
+    
+    background: linear-gradient(to bottom, #68deff, #0587bb); 
+    
+    
+    box-shadow: -1px 2px #066b93;
+        transition: width 0.3s ease; /* Smooth width transition on changes */
+    }   
+    .ataque button, .defensa button {
+        background-color: #31384f; /* Green */
+        width: 3px;
+        box-shadow: 3px 2px 0 #000;
+        height: 30px;
+      
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 5px 0;
+        cursor: pointer;
+        border-radius: 50%; /* Make buttons circular */
+        transition: background-color 0.3s ease;
+        display: flex;
+  align-items: center;
+  justify-content: center;
+    
+      }
+    
+      .ataque button:hover {
+        background-color: #f44336; /* Darker green on hover */
+      }
+    
+      .defensa button:hover {
+        background-color: #2196F3; /* Blue on hover */
+      }

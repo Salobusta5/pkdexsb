@@ -1,0 +1,55 @@
+<div class="pokedex-view">
+    <div class="pokemon">
+        <div class="derbot"></div>
+        <div class="ababot"></div>
+
+        <div class="cuabot">
+            <div class="botonCe"></div>
+            <div class="btRojo"></div>
+            <div class="btAmar"></div>
+            <div class="btVerd"></div>
+        </div>
+
+       
+            <div class="derechacier">
+                <div class="union">
+                <div class="union1"></div>
+                <div class="union2"></div>
+                </div>
+            </div>
+        <div class="buscar">
+            <input type="number" id="pokemonNumberInput" placeholder="#Pokemon">
+            <button (click)="searchPokemon()">🔍</button>
+        </div>
+        <div class="pantalla">
+            <div class="botonesR">
+                <div class="R1"></div>
+                <div class="R2"></div>
+            </div>
+
+          
+          
+            <div class="pantInter">
+                <app-pokemon [solicitarImagen]="pokemonImagen"(clickPokemon)="handelPokemon($event)"></app-pokemon>
+            </div>
+            
+            <div class="rayitas">
+                <div class="raya1"></div>
+                <div class="raya2"></div>
+                <div class="raya3"></div>
+            </div>
+
+          
+            
+            
+        </div>
+
+        
+
+    </div>
+
+
+    <div class="grafico">
+
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="imgcon">
+<img [src]="solicitarImagen" >
+</div>
+
+<div class="control-cruz">
+    <button class="direccion arriba" (click)="funcionArriba()">
+        <div class="arriba"></div>
+    </button> 
+    <button class="direccion abajo" (click)="funcionAbajo()"></button>
+    <button class="direccion izquierda" (click)="anteriorPokemon()"></button>
+    <button class="direccion derecha" (click)="siguientePokemon()"></button>
+  </div>
+
+
+<div class="ataque">
+    
+    <div class="barraRoja" [style.width]="ataque + '%'"></div> 
+    <button (click)="disminuirAtaque()">🔥</button>
+</div>
+
+<div class="defensa">
+ 
+    <div class="barraAzul" [style.width]="defensa + '%'"></div> 
+    <button (click)="aumentarDefensa()">🛡</button>
+</div>
