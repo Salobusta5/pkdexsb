@@ -28,10 +28,10 @@ searchPokemon() {
     if (enteredNumber >= 1 && enteredNumber <= 1025) { // Check if the number is within the valid range
       this.pokemonImagen = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${enteredNumber}.png`;
     } else {
-      alert('Invalid Pokemon number. Please enter a number between 1 and 1025.');
+      alert('Ese pokemon no existe 🤦‍♂️. Solo hay 1-1025.');
     }
   } else {
-    alert('Please enter a valid Pokemon number.');
+    alert('Ingresa algun numero 🤦‍♀️');
   }
 }
 
